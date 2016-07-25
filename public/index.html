@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>TEST - SAMPLE</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+
+  <body>
+    <div id="content">
+        <div class="room"></div>
+        <div class="room-list"></div>
+        <div class="messages"></div>
+
+        <form id="send-form">
+            <input id="send-message" />
+            <input id="send-btn" type="submit" value="send" />
+
+            <div clas="help">
+                Chat commands:
+                <ul>
+                    <li>Change nickname: <code>/nick [username]</code></li>
+                    <li>Join/create room: <code>/join [room name]</code></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <!--
+    <script>
+        var socket = io();
+    </script>
+    -->
+    <script type="text/javascript" src="/js/lib/jquery-1.12.2.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/src/chat.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/src/chat_ui.js" charset="utf-8"></script>
+  </body>
+</html>
